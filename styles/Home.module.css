@@ -302,7 +302,7 @@
 }
 
 .statNumber {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 800;
   background: linear-gradient(45deg, #00d4ff, #090979);
   -webkit-background-clip: text;
@@ -315,6 +315,124 @@
   font-size: 1.1rem;
   color: rgba(255, 255, 255, 0.8);
   font-weight: 500;
+}
+
+/* API Key Section */
+.apiSection {
+  padding: 5rem 2rem;
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(10px);
+}
+
+.apiContent {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.apiIcon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.apiContent h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  background: linear-gradient(45deg, #fff, #a8edea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.apiContent p {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.apiSteps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.step {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.stepNumber {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  color: white;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.stepText {
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.5;
+}
+
+.stepText strong {
+  color: white;
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.apiButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  color: white;
+  padding: 1.2rem 2.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+  border: 2px solid transparent;
+}
+
+.apiButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(102, 126, 234, 0.4);
+  background: linear-gradient(45deg, #764ba2, #667eea);
+}
+
+.apiButton .arrow {
+  transition: transform 0.3s ease;
+}
+
+.apiButton:hover .arrow {
+  transform: translateX(5px);
 }
 
 /* CTA Section */
@@ -502,5 +620,25 @@
     width: 100%;
     text-align: center;
     justify-content: center;
+  }
+
+  .apiSteps {
+    grid-template-columns: 1fr;
+  }
+
+  .apiContent h2 {
+    font-size: 2rem;
+  }
+
+  .apiContent p {
+    font-size: 1.1rem;
+  }
+
+  .step {
+    text-align: center;
+  }
+
+  .stepNumber {
+    margin: 0 auto 1rem;
   }
 }

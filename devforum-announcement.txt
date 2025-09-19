@@ -1,54 +1,113 @@
-[RELEASE] AI Ropanion - AI-Powered Roblox Studio Companion
+[RELEASE] Ropanion - AI-Powered Roblox Studio Companion
 
 Hey everyone! 👋
 
-I'm excited to share Ropanion, a new AI tool I've been working on to help with Roblox development. It's designed to make scripting and debugging a bit easier for all of us.
+I'm excited to share Ropanion, a new AI tool I've been working on to help with Roblox development. It's designed to make scripting, debugging, UI and more a bit easier for everyone, especially new devs that actually try to learn.
 
 Just a heads up: This is a passion project, so updates come when I have time to work on it.
 
-🎯 **What is Ropanion?**
+---
+
+## 🎯 What is Ropanion?
+
 Basically, it's an AI companion that works right inside Roblox Studio. Whether you're experienced or just starting out, it can help speed up your workflow and solve problems faster.
 
-Connect your OpenRouter API key and unlock the full potential of AI-powered Roblox development. Generate scripts, get instant help, and accelerate your workflow with intelligent assistance.
+### 📸 UI Previews
 
-🚀 **Quick Setup:**
-1. **Get your API key** - Sign up at OpenRouter and get your API key
-2. **Install AI Ropanion** - Download from Roblox Creator Store
-3. **Start building** - Use AI to enhance your Roblox development
+[details="Settings UI Preview"]
+![image|690x469](upload://96NhqqDdqsoPxiuOQGwYdrL8Tip.png)
+![image|690x467](upload://8RoiKt9V7CzOnX5hEHEi97VhfaV.png)
+![image|690x464](upload://ziZNB349qCIHI7PIfMRKZqT6gri.png)
+![image|690x467](upload://53Vj85yDIiPZtEDGaZYYZ4bERQb.png)
 
-🔗 **Links:**
-• **Landing Page:** https://ropanion.vercel.app
-• **Roblox Store:** https://create.roblox.com/store/asset/112432781546778
-• **GitHub:** https://github.com/m1st4k3nn/Ropanion
+*Note: On the left there will be filters and I'll improve how the models are shown when I get to it.*
+[/details]
 
-🧪 **Early Testing Phase**
-This is the first release, and I'm treating it as a testing period to get community feedback. Everything works, but keep in mind:
+[details="Chat UI Preview"]
+![image|690x495](upload://7lxMzwyhyJVVVIzRU0HJMxXrE4m.png)
+![image|690x486](upload://lTGXM64uOQMrelkeY4mJTELKHH5.png)
+![image|675x500](upload://qaBjCwllw7YlKToLV07bEaTjsL4.png)
+[/details]
 
-• More features and improvements are coming soon
-• I'll be adding stuff based on what you all suggest
+---
 
-🔒 **Privacy First**
-• No personal data collection
-• No usage tracking
-• No storing of your scripts
+## 🚀 Quick Setup Guide
+
+### 1. Get Your API Key
+Sign up at [OpenRouter](https://openrouter.ai) with Google and get your [API key](https://openrouter.ai/settings/keys)
+
+[details="OpenRouter Setup Screenshots"]
+![image|678x415, 75%](upload://oABbkPG8owHpEiL2H0hJUA8w8pe.png)
+![image|383x421](upload://x7OPbWgWQ2AUxxue1mybab1O24r.png)
+[/details]
+
+### 2. Install Ropanion
+[Download from Roblox Creator Store](https://create.roblox.com/store/asset/112432781546778)
+
+### 3. Start Creating! 🎉
+
+---
+
+## 🔗 Important Links
+
+• **Roblox Store:** [Ropanion](https://create.roblox.com/store/asset/112432781546778)
+• **Landing Page:** [Page](https://ropanion.vercel.app) *(quickly made for the store listing)*
+
+---
+
+## 🧪 Early Testing Phase
+
+This is the first release - I'm treating it as a testing period to get community feedback. Everything works, but keep in mind:
+
+• **More features** and improvements are coming soon
+• **Community suggestions** will help shape future updates
+• **System prompt** is currently ~900-950 tokens (will be improved)
+
+---
+
+## 🔒 Privacy & Security
+
+Your privacy matters! Ropanion:
+• Does NOT collect personal data
+• Does NOT track usage patterns
+• Does NOT store your scripts externally
 • All processing is local or through privacy-focused AI services
+• Everything is stored locally in Studio using `plugin:SetSetting()`
 
-💬 **Need Help?**
-If you run into issues or have ideas:
-• Hit me up on Discord: @m1st4k3n
-• Reply here with feedback
-• DM me on the forums
+---
 
-🌟 **Why Try It?**
-Ever been stuck debugging something spread across multiple scripts? Instead of copying everything to an external AI, you can just ask Ropanion directly in Studio: "Check why this error is happening in script1, script2, or game.SSS.Main"
+## 💬 Need Help?
 
-It's all about making Roblox development smoother for everyone in our community.
+If you run into issues, have ideas, or need help:
+• **Discord:** @m1st4k3n
+• **Reply here** with feedback
+• **DM me** on the forums
 
-🎮 **Give it a shot!**
+---
+
+## 🌟 Why Try Ropanion?
+
+Ever been stuck debugging something spread across multiple scripts? Instead of copying everything to an external AI, you can just ask Ropanion directly in Studio:
+
+```
+"Check why this error is happening in script1, script2, or game.SSS.Main"
+```
+
+**💡 Pro Tips:**
+• **Be specific** - the more details you give, the better the results
+• **AI limitations** - remember that most AI models aren't perfect with Luau sometimes, so results may vary
+
+It's all about making Roblox development smoother for everyone in our community! 🚀
+
+---
+
+## 🎮 Ready to Try It?
 
 I'd recommend testing it in a copy of your place first, just to be safe. I've tried to catch potential issues, but better safe than sorry.
 
-Looking forward to your thoughts!
+**Troubleshooting:** If you have any issues or get stuck, try uninstalling and reinstalling the plugin. Sorry, but this is all I can do at this time 😅
+
+Looking forward to your thoughts and feedback!
 
 ---
 

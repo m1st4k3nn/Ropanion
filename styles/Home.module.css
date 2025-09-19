@@ -168,16 +168,31 @@
   to { opacity: 1; transform: translateX(0); }
 }
 
-.apiCard {
+.heroCards {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  max-width: 900px;
+}
+
+.apiCard, .supportCard {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(20px);
   border-radius: 20px;
   padding: 2rem;
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-  animation: floatCard 6s ease-in-out infinite;
-  max-width: 400px;
+  flex: 1;
   text-align: center;
+  animation: floatCard 6s ease-in-out infinite;
+}
+
+.apiCard {
+  animation-delay: 0s;
+}
+
+.supportCard {
+  animation-delay: 1s;
 }
 
 @keyframes floatCard {
@@ -286,6 +301,76 @@
 
 .apiCard .apiButton:hover .arrow {
   transform: translateX(3px);
+}
+
+/* Support Card Styles */
+.supportCard .supportIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.supportCard h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.supportCard p {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.discordInfo {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.discordIcon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.discordText {
+  text-align: left;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.4;
+  font-size: 0.9rem;
+}
+
+.discordText strong {
+  color: white;
+  display: block;
+  margin-bottom: 0.25rem;
+  font-size: 0.95rem;
+}
+
+.discordHandle {
+  color: #5865f2;
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+}
+
+.supportNote {
+  margin-top: 1rem;
+}
+
+.supportNote small {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.8rem;
+  line-height: 1.4;
+  display: block;
 }
 
 /* Features Section */
@@ -600,6 +685,17 @@
     justify-content: center;
   }
 
+  .heroCards {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .apiCard, .supportCard {
+    max-width: 100%;
+    width: 100%;
+  }
+
   .apiCard .apiSteps {
     gap: 0.75rem;
   }
@@ -615,11 +711,21 @@
     margin: 0 auto;
   }
 
-  .apiCard h3 {
+  .apiCard h3, .supportCard h3 {
     font-size: 1.3rem;
   }
 
-  .apiCard p {
+  .apiCard p, .supportCard p {
     font-size: 0.9rem;
+  }
+
+  .discordInfo {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .discordText {
+    text-align: center;
   }
 }

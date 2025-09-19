@@ -35,37 +35,55 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.heroVisual}>
-          <div className={styles.apiCard}>
-            <div className={styles.apiIcon}>🔑</div>
-            <h3>Add Your API Key & Start Building</h3>
-            <p>Connect your OpenRouter API key and unlock the full potential of AI-powered Roblox development. Generate scripts, get instant help, and accelerate your workflow with intelligent assistance.</p>
-            <div className={styles.apiSteps}>
-              <div className={styles.step}>
-                <div className={styles.stepNumber}>1</div>
-                <div className={styles.stepText}>
-                  <strong>Get your API key</strong><br/>
-                  Sign up at OpenRouter and get your API key
+          <div className={styles.heroCards}>
+            <div className={styles.apiCard}>
+              <div className={styles.apiIcon}>🔑</div>
+              <h3>Add Your API Key & Start Building</h3>
+              <p>Connect your OpenRouter API key and unlock the full potential of AI-powered Roblox development. Generate scripts, get instant help, and accelerate your workflow with intelligent assistance.</p>
+              <div className={styles.apiSteps}>
+                <div className={styles.step}>
+                  <div className={styles.stepNumber}>1</div>
+                  <div className={styles.stepText}>
+                    <strong>Get your API key</strong><br/>
+                    Sign up at OpenRouter and get your API key
+                  </div>
+                </div>
+                <div className={styles.step}>
+                  <div className={styles.stepNumber}>2</div>
+                  <div className={styles.stepText}>
+                    <strong>Install AI Ropanion</strong><br/>
+                    Download from Roblox Creator Store
+                  </div>
+                </div>
+                <div className={styles.step}>
+                  <div className={styles.stepNumber}>3</div>
+                  <div className={styles.stepText}>
+                    <strong>Start building</strong><br/>
+                    Use AI to enhance your Roblox development
+                  </div>
                 </div>
               </div>
-              <div className={styles.step}>
-                <div className={styles.stepNumber}>2</div>
-                <div className={styles.stepText}>
-                  <strong>Install AI Ropanion</strong><br/>
-                  Download from Roblox Creator Store
+              <a href="https://create.roblox.com/store/asset/112432781546778" className={styles.apiButton} target="_blank" rel="noopener noreferrer">
+                Get Started Now
+                <span className={styles.arrow}>→</span>
+              </a>
+            </div>
+
+            <div className={styles.supportCard}>
+              <div className={styles.supportIcon}>💬</div>
+              <h3>Having Issues?</h3>
+              <p>Ropanion is very early in development. If you encounter any problems or need help getting started, feel free to reach out!</p>
+              <div className={styles.discordInfo}>
+                <div className={styles.discordIcon}>👨‍💻</div>
+                <div className={styles.discordText}>
+                  <strong>Message the dev on Discord:</strong><br/>
+                  <span className={styles.discordHandle}>@m1st4k3n</span>
                 </div>
               </div>
-              <div className={styles.step}>
-                <div className={styles.stepNumber}>3</div>
-                <div className={styles.stepText}>
-                  <strong>Start building</strong><br/>
-                  Use AI to enhance your Roblox development
-                </div>
+              <div className={styles.supportNote}>
+                <small>Early access • Active development • Community support</small>
               </div>
             </div>
-            <a href="https://create.roblox.com/store/asset/112432781546778" className={styles.apiButton} target="_blank" rel="noopener noreferrer">
-              Get Started Now
-              <span className={styles.arrow}>→</span>
-            </a>
           </div>
         </div>
       </section>

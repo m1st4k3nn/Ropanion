@@ -9,6 +9,13 @@ Just a heads up: This is a passion project, so updates come when I have time to 
 🎯 **What is Ropanion?**
 Basically, it's an AI companion that works right inside Roblox Studio. Whether you're experienced or just starting out, it can help speed up your workflow and solve problems faster.
 
+Connect your OpenRouter API key and unlock the full potential of AI-powered Roblox development. Generate scripts, get instant help, and accelerate your workflow with intelligent assistance.
+
+🚀 **Quick Setup:**
+1. **Get your API key** - Sign up at OpenRouter and get your API key
+2. **Install AI Ropanion** - Download from Roblox Creator Store
+3. **Start building** - Use AI to enhance your Roblox development
+
 🔗 **Links:**
 • **Landing Page:** https://ropanion.vercel.app
 • **Roblox Store:** https://create.roblox.com/store/asset/112432781546778

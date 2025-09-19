@@ -162,7 +162,7 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.footerBottom}>
-          <p>© 2024 AI Ropanion. Powered by advanced AI technology for Roblox developers.</p>
+          <p>© 2025 AI Ropanion. Powered by advanced AI technology for Roblox developers.</p>
         </div>
       </footer>
     </div>

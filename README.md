@@ -1,78 +1,77 @@
-# AI Ropanion
+# AI Ropanion Landing Page
 
-A landing page and API proxy for AI Ropanion, your AI-powered companion for Roblox Studio development.
-
-## Description
-
-AI Ropanion enhances your Roblox Studio experience by providing AI-driven tools and insights to boost productivity in game development. This project includes a landing page and a Vercel API proxy to integrate with OpenRouter for AI requests.
+A landing page for AI Ropanion - Your AI companion for Roblox Studio development.
 
 ## Features
 
-- Code Generation: Generate Roblox scripts with AI assistance
-- Debugging Help: Get AI-powered debugging suggestions
-- Project Management: Organize and manage your Roblox projects efficiently
-- OpenRouter Integration: Proxy API for secure AI requests with proper attribution
+- Modern, responsive design
+- Built with Next.js for optimal performance
+- Ready for Vercel deployment
+- Optimized for AI tool integration
 
 ## Getting Started
 
-To view the landing page locally:
+### Prerequisites
 
-1. Clone this repository
-2. Open `index.html` in your web browser
+- Node.js 18+
+- npm or yarn
 
-## Deployment
+### Installation
 
-This project is designed to be deployed on Vercel. To deploy:
-
-1. Push this code to a GitHub repository
-2. Import the repository into Vercel
-3. Vercel will automatically deploy the static site and API routes
-
-## API Proxy Setup
-
-The `/api/chat` endpoint proxies requests to OpenRouter with proper headers for attribution:
-
-- **X-Title**: "Ropanion - ROBLOX AI ASSISTANT"
-- **HTTP-Referer**: Your Vercel deployment URL
-
-### Usage from Roblox
-
-Send POST requests to `https://your-vercel-app.vercel.app/api/chat` with:
-
-- **Headers**:
-  - `Authorization: Bearer YOUR_OPENROUTER_API_KEY`
-  - `Content-Type: application/json`
-
-- **Body**: Standard OpenRouter chat completions JSON
-
-The proxy will forward the request to OpenRouter and stream the response back.
-
-### Example Roblox Code
-
-```lua
-local HttpService = game:GetService("HttpService")
-local response = HttpService:RequestAsync({
-    Url = "https://your-vercel-app.vercel.app/api/chat",
-    Method = "POST",
-    Headers = {
-        ["Authorization"] = "Bearer " .. userApiKey,
-        ["Content-Type"] = "application/json"
-    },
-    Body = HttpService:JSONEncode({
-        model = "openrouter/sonoma-sky-alpha",
-        messages = {{role = "user", content = "Hello"}},
-        stream = false
-    })
-})
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/ai-ropanion-landing.git
+cd ai-ropanion-landing
 ```
 
-## Technologies Used
+2. Install dependencies:
+```bash
+npm install
+```
 
-- HTML5
-- CSS3
-- JavaScript
-- Node.js (Vercel API)
+3. Run the development server:
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) to view the landing page.
+
+### Deployment to Vercel
+
+1. Push this code to a GitHub repository
+2. Connect your GitHub account to Vercel
+3. Import the repository in Vercel
+4. Deploy automatically
+
+The app is configured for seamless Vercel deployment with the included `package.json` and `next.config.js`.
+
+## Project Structure
+
+```
+├── pages/
+│   └── index.js          # Main landing page
+├── styles/
+│   └── Home.module.css   # Page styles
+├── public/               # Static assets
+├── package.json          # Dependencies and scripts
+├── next.config.js        # Next.js configuration
+└── README.md            # This file
+```
+
+## Customization
+
+- Edit `pages/index.js` to modify the content
+- Update `styles/Home.module.css` to change the styling
+- Add images or assets to the `public/` directory
 
 ## License
 
-This project is licensed under the MIT License.
+MIT License - feel free to use this template for your projects.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+---
+
+Built with ❤️ for Roblox developers

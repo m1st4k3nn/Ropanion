@@ -35,10 +35,37 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.heroVisual}>
-          <div className={styles.floatingCard}>
-            <div className={styles.codeSnippet}>
-              <pre><code>local AI = require(game.ReplicatedStorage.AI)</code></pre>
+          <div className={styles.apiCard}>
+            <div className={styles.apiIcon}>🔑</div>
+            <h3>Add Your API Key & Start Building</h3>
+            <p>Connect your OpenRouter API key and unlock the full potential of AI-powered Roblox development. Generate scripts, get instant help, and accelerate your workflow with intelligent assistance.</p>
+            <div className={styles.apiSteps}>
+              <div className={styles.step}>
+                <div className={styles.stepNumber}>1</div>
+                <div className={styles.stepText}>
+                  <strong>Get your API key</strong><br/>
+                  Sign up at OpenRouter and get your API key
+                </div>
+              </div>
+              <div className={styles.step}>
+                <div className={styles.stepNumber}>2</div>
+                <div className={styles.stepText}>
+                  <strong>Install AI Ropanion</strong><br/>
+                  Download from Roblox Creator Store
+                </div>
+              </div>
+              <div className={styles.step}>
+                <div className={styles.stepNumber}>3</div>
+                <div className={styles.stepText}>
+                  <strong>Start building</strong><br/>
+                  Use AI to enhance your Roblox development
+                </div>
+              </div>
             </div>
+            <a href="https://create.roblox.com/store/asset/112432781546778" className={styles.apiButton} target="_blank" rel="noopener noreferrer">
+              Get Started Now
+              <span className={styles.arrow}>→</span>
+            </a>
           </div>
         </div>
       </section>
@@ -89,63 +116,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className={styles.stats}>
-        <div className={styles.statsGrid}>
-          <div className={styles.stat}>
-            <div className={styles.statNumber}>100%</div>
-            <div className={styles.statLabel}>Uptime</div>
-          </div>
-          <div className={styles.stat}>
-            <div className={styles.statNumber}>OpenRouter</div>
-            <div className={styles.statLabel}>Integrated</div>
-          </div>
-          <div className={styles.stat}>
-            <div className={styles.statNumber}>Roblox</div>
-            <div className={styles.statLabel}>Studio Ready</div>
-          </div>
-          <div className={styles.stat}>
-            <div className={styles.statNumber}>AI</div>
-            <div className={styles.statLabel}>Powered</div>
-          </div>
-        </div>
-      </section>
-
-      {/* API Key Section */}
-      <section className={styles.apiSection}>
-        <div className={styles.apiContent}>
-          <div className={styles.apiIcon}>🔑</div>
-          <h2>Add Your API Key & Start Building</h2>
-          <p>Connect your OpenRouter API key and unlock the full potential of AI-powered Roblox development. Generate scripts, get instant help, and accelerate your workflow with intelligent assistance.</p>
-          <div className={styles.apiSteps}>
-            <div className={styles.step}>
-              <div className={styles.stepNumber}>1</div>
-              <div className={styles.stepText}>
-                <strong>Get your API key</strong><br/>
-                Sign up at OpenRouter and get your API key
-              </div>
-            </div>
-            <div className={styles.step}>
-              <div className={styles.stepNumber}>2</div>
-              <div className={styles.stepText}>
-                <strong>Install AI Ropanion</strong><br/>
-                Download from Roblox Creator Store
-              </div>
-            </div>
-            <div className={styles.step}>
-              <div className={styles.stepNumber}>3</div>
-              <div className={styles.stepText}>
-                <strong>Start building</strong><br/>
-                Use AI to enhance your Roblox development
-              </div>
-            </div>
-          </div>
-          <a href="https://create.roblox.com/store/asset/112432781546778" className={styles.apiButton} target="_blank" rel="noopener noreferrer">
-            Get Started Now
-            <span className={styles.arrow}>→</span>
-          </a>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className={styles.ctaSection}>

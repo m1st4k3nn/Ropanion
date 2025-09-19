@@ -139,7 +139,7 @@ export default function Home() {
       <section className={styles.ctaSection}>
         <div className={styles.ctaContent}>
           <h2>Ready to Transform Your Roblox Development?</h2>
-          <p>Join thousands of developers who are already using AI Ropanion to build amazing experiences.</p>
+          <p>Be among the first to experience the future of AI-powered Roblox development.</p>
           <a href="https://create.roblox.com/store/asset/112432781546778" className={styles.ctaButton} target="_blank" rel="noopener noreferrer">
             Get AI Ropanion Now
             <span className={styles.arrow}>→</span>

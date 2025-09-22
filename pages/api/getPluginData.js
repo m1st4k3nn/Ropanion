@@ -1,6 +1,6 @@
 export default function handler(req, res) {
   res.status(200).json({
-    latestVersion: "1.4.7",
+    latestVersion: "1.4.8",
     changelog: []
   });
 }

@@ -1,9 +1,9 @@
 export default function handler(req, res) {
   res.status(200).json({
-    latestVersion: "1.0.0",
+    latestVersion: "1.0.1",
     Announcement: "Bugs, issues, feature requests? Please send us a message by going to the settings menu and clicking on 'Contact us'",
     changelog: {
-      "1.0.0": {
+      "1.0.1": {
         UpdateName: "Initial (kinda stable) Release",
         Changes: [
           "Core intended functionality",

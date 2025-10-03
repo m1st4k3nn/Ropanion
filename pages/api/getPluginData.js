@@ -1,9 +1,8 @@
 export default function handler(req, res) {
   res.status(200).json({
-    latestVersion: "1.0.1",
-    Announcement: "Bugs, issues, feature requests? Please send us a message by going to the settings menu and clicking on 'Contact us'",
+    latestVersion: "1.0.0",
     changelog: {
-      "1.0.1": {
+      "1.0.0": {
         UpdateName: "Initial (kinda stable) Release",
         Changes: [
           "Core intended functionality",
@@ -12,6 +11,7 @@ export default function handler(req, res) {
         ],
         Notes: [
           "If you had used the plugin before, chat data has been deleted (new datastore structure)",
+          "Any issues or things don't work as intended? Please contact us by going to the settings menu and clicking on 'Contact us'",
         ]
       }
     }
